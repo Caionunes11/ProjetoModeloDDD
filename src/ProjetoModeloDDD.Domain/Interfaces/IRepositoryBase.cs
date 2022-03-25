@@ -6,7 +6,7 @@ namespace ProjetoModeloDDD.Domain.Interfaces
     {
         void Add(TEntity obj);
         TEntity GetById(int id);
-        IEnumerable<TEntity> GetByAll();
+        IEnumerable<TEntity> GetAll();
         void Update(TEntity obj);
         void Remove(TEntity obj);
         void Dispose();

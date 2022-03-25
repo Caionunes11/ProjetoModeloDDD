@@ -1,5 +1,4 @@
-﻿using ProjetoModelo.Domain.Entities;
-using ProjetoModelo.Infra.Data.EntityConfig;
+﻿using ProjetoModelo.Infra.Data.EntityConfig;
 using ProjetoModeloDDD.Domain.Entities;
 using System;
 using System.Data.Entity;
@@ -11,7 +10,7 @@ namespace ProjetoModelo.Infra.Data.Contexto
     public class ProjetoModeloContext : DbContext
     {
         public  ProjetoModeloContext()
-            : base("ProjetoModelo")
+            : base("ProjetoModeloDDD")
             {
             
             }
@@ -20,6 +19,8 @@ namespace ProjetoModelo.Infra.Data.Contexto
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();

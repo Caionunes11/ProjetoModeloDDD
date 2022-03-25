@@ -21,7 +21,7 @@ namespace ProjetoModelo.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<TEntity> GetByAll()
+        public IEnumerable<TEntity> GetAll()
         {
             return Db.Set<TEntity>().ToList();
         }

@@ -1,4 +1,4 @@
-﻿using ProjetoModelo.Domain.Entities;
+﻿using ProjetoModeloDDD.Domain.Entities;
 using System.Data.Entity.ModelConfiguration;
 
 namespace ProjetoModelo.Infra.Data.EntityConfig

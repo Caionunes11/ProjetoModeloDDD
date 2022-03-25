@@ -1,4 +1,4 @@
-﻿using ProjetoModelo.Domain.Entities;
+﻿using ProjetoModeloDDD.Domain.Entities;
 
 namespace ProjetoModeloDDD.Domain.Entities
 {
